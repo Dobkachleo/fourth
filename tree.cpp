@@ -24,7 +24,7 @@ struct Tree {
 	List *nodes;
 };
 
-/** \fn void Push(List **head, int data)
+/** \fn void Push(List **head, int value, int d)
 *   \brief Function pushes new element at the end of list
 *
 *	\param **head - list head pointer-pointer
@@ -56,7 +56,7 @@ List* Get(List* head, int i) {
 	return head;
 }
 
-/** \fn void Insert(List *head, int i, int val)
+/** \fn void Insert(List *head, int i, int val, int d)
 *	\brief Function inserts i-th element
 *
 *	\param *head - list head pointer
@@ -142,7 +142,7 @@ int Find(List *head, int set) {
 	return p->number;
 }
 
-/** \fn void ShowReverse(List *head)
+/** \fn void ShowReverse(List *head, int n)
 *	\brief Function returns list in reverse order
 *
 *	\param *head - list head pointer
